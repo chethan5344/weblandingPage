@@ -1,0 +1,314 @@
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+
+    display: grid;
+    place-items: center;
+}
+
+main {
+    aspect-ratio: 1.618;
+    width: 90vmin;
+    position: relative;
+}
+
+main>.shape {
+    background-color: rgba(255 255 255 / 5%);
+    position: absolute;
+    transition: left, top, height, width, border-radius;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+
+main>.shape:nth-child(1) {
+    background-color: #562c2c;
+}
+
+main>.shape:nth-child(2) {
+    background-color: #f2542d;
+}
+
+main>.shape:nth-child(3) {
+    background-color: #f5dfbb;
+}
+
+main>.shape:nth-child(4) {
+    background-color: #0e9594;
+}
+
+main>.shape:nth-child(5) {
+    background-color: #127475;
+}
+
+main>.shape:nth-child(6) {
+    background-color: #bf0603;
+}
+
+main>.shape:nth-child(7) {
+    background-color: #708d81;
+}
+
+main[data-config="1"]>.shape:nth-child(1) {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 20%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(1) {
+    border-radius: 28%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(1) {
+    border-radius: 0 0 0 80%;
+}
+
+main[data-config="1"]>.shape:nth-child(2) {
+    top: 0;
+    left: 20%;
+    height: 50%;
+    width: 30%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(2) {
+    border-radius: 25%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(2) {
+    border-radius: 50%;
+}
+
+main[data-config="1"]>.shape:nth-child(3) {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 60%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(3) {
+    border-radius: 15%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(3) {
+    border-radius: 0 50% 0 0;
+}
+
+main[data-config="1"]>.shape:nth-child(4) {
+    bottom: 0;
+    left: 80%;
+    height: 50%;
+    width: 30%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(4) {
+    border-radius: 25%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(4) {
+    border-radius: 50% 0 0 0;
+}
+
+main[data-config="1"]>.shape:nth-child(5) {
+    bottom: 0;
+    left: 95%;
+    height: 25%;
+    width: 15%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(5) {
+    border-radius: 50%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(5) {
+    border-radius: 50% 0 0 0;
+}
+
+main[data-config="1"]>.shape:nth-child(6) {
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 30%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(6) {
+    border-radius: 25%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(6) {
+    border-radius: 0 40% 40% 0;
+}
+
+main[data-config="1"]>.shape:nth-child(7) {
+    bottom: 0;
+    left: 30%;
+    height: 50%;
+    width: 20%;
+}
+
+main[data-config="1"][data-radius="1"]>.shape:nth-child(7) {
+    border-radius: 28%;
+}
+
+main[data-config="1"][data-radius="2"]>.shape:nth-child(7) {
+    border-radius: 0 0 0 80%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(1) {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 10%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(2) {
+    top: 0;
+    left: 10%;
+    height: 70%;
+    width: 15%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(3) {
+    top: 30%;
+    left: 25%;
+    height: 70%;
+    width: 15%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(4) {
+    top: 30%;
+    left: 40%;
+    height: 50%;
+    width: 10%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(5) {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 25%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(6) {
+    top: 10%;
+    left: 75%;
+    height: 80%;
+    width: 15%;
+}
+
+main[data-config="2"][data-radius="1"]>.shape:nth-child(7) {
+    top: 50%;
+    left: 90%;
+    height: 50%;
+    width: 10%;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(1) {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 10%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(2) {
+    top: 0;
+    left: 10%;
+    height: 70%;
+    width: 15%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(4) {
+    top: 30%;
+    left: 25%;
+    height: 70%;
+    width: 15%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(5) {
+    top: 50%;
+    left: 40%;
+    height: 50%;
+    width: 10%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(6) {
+    top: 45%;
+    left: 50%;
+    height: 25%;
+    width: 10%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(7) {
+    top: 10%;
+    left: 60%;
+    height: 80%;
+    width: 20%;
+    border-radius: 10em;
+}
+
+main[data-config="2"][data-radius="2"]>.shape:nth-child(3) {
+    top: 0%;
+    left: 80%;
+    height: 100%;
+    width: 20%;
+    border-radius: 10em;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(1) {
+    top: 20%;
+    left: 0;
+    height: 32%;
+    width: 20%;
+    border-radius: 100%;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(2) {
+    top: 0;
+    left: 20%;
+    height: 60%;
+    width: 35%;
+    border-radius: 50%;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(3) {
+    top: 0;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+    border-radius: 50%;
+    z-index: -1;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(4) {
+    top: 40%;
+    left: 65%;
+    height: 60%;
+    width: 35%;
+    border-radius: 50%;
+    z-index: -1;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(5) {
+    top: 75%;
+    left: 85%;
+    height: 25%;
+    width: 15%;
+    border-radius: 50%;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(7) {
+    top: 50%;
+    left: 3%;
+    height: 50%;
+    width: 30%;
+    border-radius: 50%;
+}
+main[data-config="3"][data-radius="1"]>.shape:nth-child(6) {
+    top: 59%;
+    left: 33%;
+    height: 30%;
+    width: 18%;
+    border-radius: 50%;
+}
+

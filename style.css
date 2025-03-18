@@ -59,7 +59,7 @@ main[data-config="1"]>.shape:nth-child(1) {
 }
 
 main[data-config="1"][data-radius="1"]>.shape:nth-child(1) {
-    border-radius: 28%;
+    border-radius: 4em;
 }
 
 main[data-config="1"][data-radius="2"]>.shape:nth-child(1) {
@@ -149,7 +149,7 @@ main[data-config="1"]>.shape:nth-child(7) {
 }
 
 main[data-config="1"][data-radius="1"]>.shape:nth-child(7) {
-    border-radius: 28%;
+    border-radius: 4em;
 }
 
 main[data-config="1"][data-radius="2"]>.shape:nth-child(7) {
